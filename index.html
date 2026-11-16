@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Css/style.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <div class="container contenitore">
+    <div class="row">
+      <div class="d-none d-sm-block col-md-7 col-sm-6 text-white text-center">
+        <h1>HI GUYS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere enim harum necessitatibus obcaecati adipisci
+          voluptates vero aliquam magnam soluta labore nulla sint laboriosam perspiciatis asperiores amet, corrupti
+          ipsam animi rerum.</p>
+      </div>
+      <div class="col-12 col-md-5 col-sm-6 bg-light login">
+        <h1>Login</h1>
+        <p>Don't Have An Account? <span onclick="createAccount()">Create Your Account</span>, Takes A Few Minutes</p>
+        <p class="bg-success d-none messaggio" id="success">Login Succesfull</p>
+        <p class="bg-danger d-none messaggio" id="failed">Login Failed, password incorrect</p>
+        <p>Username</p>
+        <form>
+          <input type="text" placeholder="inserisci nome" id="nome">
+        </form>
+        <p>Paasword</p>
+        <form>
+          <input type="password" placeholder="inserisci password" id="password"><i id="occhio" class="bi bi-eye-slash px-3"
+            onclick="vis_password()"></i>
+        </form>
+        <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="signup" class="signup d-none">
+    <div class="signup-utente">
+      <span class="chiudi" onclick="createAccount()">×</span>
+
+
+      <h3>Sign up</h3>
+
+
+      <input type="text" placeholder="New Username" id="newUsername">
+      <input type="password" placeholder="Password" id="newPassword">
+
+
+      <button type="button" class="btn btn-dark" onclick="registrazione()">Sign up</button>
+
+
+      <p id="messaggio"></p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./Js/script.js"></script>
+</body>
+
+
+</html>
