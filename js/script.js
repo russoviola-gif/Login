@@ -9,16 +9,16 @@ function login(){
     let error=document.getElementById("failed");
 
 
-    if(utenti.includes(n)){
+    
         let posizione = utenti.indexOf(n);
-        if(password[posizione] !== p){
+        if(utenti.indexOf(n) !== -1 && password[posizione] !== p){
             success.classList.add("d-none");
             error.classList.remove("d-none");
         }else{
             success.classList.remove("d-none");
             error.classList.add("d-none");
         }
-    }
+
 }
 function vis_password() {
     let password = document.getElementById("password");

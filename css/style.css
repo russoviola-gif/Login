@@ -2,12 +2,16 @@
 
 
 body {
-    background-color: rgb(84, 96, 209);
+    background-image: url("../images/milky-way-glows-mountain-peak-dusk-generated-by-ai_188544-19863.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
 .contenitore {
     padding-top: 20px;
+    
 }
 
 
@@ -40,6 +44,9 @@ body {
 
 
 .signup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
